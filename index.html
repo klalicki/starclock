@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starclock</title>
+    <script src="/jquery-3.3.1.min.js"></script>
+    <script src="/velocity.min.js"></script>
+  </head>
+  <body>
+    <article class="project-page">
+      <h1 class="page-header">Starclock</h1>
+
+      <div class="" id="clockwrapper">
+        <div class="clock-loading">
+          <h1>loading...</h1>
+        </div>
+        <img src="/img/starclock-box.jpg" alt="" />
+      </div>
+
+      <p>
+        The goal of this project was to design a novel means of timekeeping,
+        that would be both accurately readable and interesting to look at. The
+        <i>Starclock</i> uses the metaphor of a night sky to display the current
+        time. Each of the three 'constellations' represents a different digit of
+        the time; when the user clicks on the clock, the time appears in
+        numerical form, but it can be read without numbers by simply counting
+        the stars in each ring.
+      </p>
+      <p>
+        <i>Built with JavaScript & p5.js</i>
+      </p>
+    </article>
+  </body>
+  <script src="p5.min.js"></script>
+  <script src="starclock.js"></script>
+  <style>
+    .project-page {
+      margin: 0 auto;
+      max-width: 900px;
+    }
+    #clockwrapper {
+      position: relative;
+    }
+    #clockwrapper canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    * {
+      font-family: sans-serif;
+    }
+  </style>
+</html>
